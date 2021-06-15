@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kavitha finance</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"> </script>
+</head>
+<body>
+    <header>
+        <h1>KAVITHA finance</h1>
+        <br>
+        <h3>easy loan form.....</h3>
+
+    </header>
+    <section>
+        <div class="row">
+            
+            <div class="col-2">
+                <h1>Quick apply</h1>
+                <div class="fmr">
+                    <form  id="submit-formb">
+                     
+                      
+                      <input type="text" name="fullname" placeholder="Fullname" required minlength="4">
+                      <input type="tel" name="mobile" placeholder="Mobile Number" required pattern="[0-9]{10}">
+                      
+
+                   
+                    
+                    <input type="email" name="emaill" placeholder="Valid Email" required>
+                    <input type="text" name="place" placeholder="Type your place" required minlength="3">
+                   
+                   
+                    <select  name="District" id="" onchange="ba(this.value)">
+                         <option value="" selected disabled>district</option>
+                         <option value="eranakulam">eranakulam</option>
+                         <option value="thrissur">thrissur</option>
+                     </select>
+                    
+                    <input type="submit" class="button" value="submit">
+                  
+                  
+                    </form>
+                    </div>
+            </div>
+            <div class="col2">
+                <p>
+                    നിങ്ങൾ ഒരു വ്യാപാരി ആണോ 
+ലോക്കഡോൺ കാലം നിങ്ങളെ സാമ്പത്തികം ആയി തളർത്തിയോ ...
+ഞങ്ങൾക് നിങ്ങളെ സഹായിക്കാൻ ആകും ....
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <!---------------------------footter-------------------------------->
+<div  id="ftr" class="footer">
+    <div class="containerr">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>useful links</h3>
+                <ul>
+                    <li></li>
+                    <li><strike>blog spot</strike></li>
+                    <li><strike>policy</strike></li>
+                    <li><strike>join</strike></li>
+                </ul>
+            </div>
+            <div class="footer-col-2">
+                <h3>follow us</h3>
+                <ul>
+                  <li><a href="">
+                    facebook</a></li>
+                    <li><strike> Twitter</strike></li>
+                    <li><strike>Instagram</strike></li>
+                    <li>email:</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2021 - designed by aKaSH M SOMAN</p>
+    </div>
+  </div>
+  
+  
+
+
+
+    <!-----------java script for form-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $("#submit-formb").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbxgAJbn7RSeZALweIZVVUEebu3HCdG771mwLlPk/exec",
+                data:$("#submit-formb").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully our relation exicutive contact you soon..")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
+</body>
+</html>
