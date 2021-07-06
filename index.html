@@ -33,13 +33,40 @@
                    
                     
                     <input type="email" name="emaill" placeholder="Valid Email" required>
-                    <input type="text" name="place" placeholder="Type your place" required minlength="3">
+
+
+                    <select  name="District" id="" onchange="ba(this.value)">
+                        <option value="" selected disabled>Loan type</option>
+                        <option value="">Kavitha vyapari loan</option>
+                        <option value="">property loan</option>
+                        <option value="">Gold loan</option>
+                        <option value="">Gold purshase loan</option>
+                        <option value="">Personal loan</option>
+                        <option value="">Micro finance loan</option>
+                        <option value="">Other security loans</option>
+                       
+                        
+                    </select>
+                    
                    
                    
                     <select  name="District" id="" onchange="ba(this.value)">
-                         <option value="" selected disabled>district</option>
-                         <option value="eranakulam">eranakulam</option>
-                         <option value="thrissur">thrissur</option>
+                         <option value="" selected disabled>select your place</option>
+                         <option value="eranakulam">paravur(ekm)</option>
+                         <option value="eranakulam">varapuzha(ekm)</option>
+                         <option value="eranakulam">cherai(ekm)</option>
+                         <option value="eranakulam">munambam(ekm)</option>
+                         <option value="eranakulam">moothakunnam(ekm)</option>
+                         <option value="eranakulam">gothuruth(ekm)</option>
+                         <option value="eranakulam">puthanveelikara(ekm)</option>
+                         <option value="eranakulam">Alangaad(ekm)</option>
+                         <option value="eranakulam">aluva(ekm)</option>
+                         <option value="thrissur">kodungaloor(thri)</option>
+                         <option value="thrissur">azhikoood(thri)</option>
+                         <option value="thrissur">kayppamangalam(thri)</option>
+                         <option value="thrissur">vellangaloor(thri)</option>
+                         <option value="thrissur">maala(thri)</option>
+                         
                      </select>
                     
                     <input type="submit" class="button" value="submit">
